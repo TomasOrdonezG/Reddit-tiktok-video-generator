@@ -176,10 +176,10 @@ with open(Post.HISTORY, 'r') as f:
       post_id_list[i] = post_id_list[i].strip()
 
 def create_data(subreddit_names: list, number_of_posts_per_subreddit: int, sort='hot') -> list[Subreddit]:
-   user_agent = "text_extractor"
+   user_agent = "XXX"
 
    # Create an instance of reddit class
-   reddit = praw.Reddit(client_id="JGDyY33hR3k2z4QVj6wdAg",client_secret="47VbTjXL5LcXPZAALA6VAW4mlXXJdQ",user_agent=user_agent)
+   reddit = praw.Reddit(client_id="XXX",client_secret="XXX",user_agent=user_agent)
    
    # Initialize a list of subreddit objects
    subreddits = []
@@ -237,11 +237,11 @@ def main() -> None:
    clear(Post.AUDIO_FOLDER, ask=False, log=False)
    
    # * Modifiable Variables
-   subreddit_names = ["TrueOffMyChest", "tifu", "AmItheAsshole"]
-   number_of_posts_per_subreddit = 5
+   subreddit_names = ["TrueOffMyChest", "tifu"]
+   number_of_posts_per_subreddit = 1
    
    # ! gets data
-   subreddits = create_data(subreddit_names, number_of_posts_per_subreddit)#, sort='top')
+   subreddits = create_data(subreddit_names, number_of_posts_per_subreddit)
    create_videos(subreddits)
 
 if __name__ == '__main__':
