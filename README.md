@@ -17,3 +17,4 @@ sorry for the program not being very user friendly but I never planned on sharin
 - clear.py clears a directory of all its contents, inside main.py, it will not clear anything other than 'audio', you can check main.py if you don't trust me
 - history.txt contains all the post ids from all the posts already generated so you don't create duplicates
 - profanity_filter.txt is used to make the videos more family friendly, though it is very incomplete
+- this was a dumb personal project, do not take it very seriously
