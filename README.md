@@ -6,7 +6,7 @@ get access to the reddit API by adding your credentials, it is very easy but red
 
 replace the 'XXX' with your credentials on line 179 and 182 inside the create_data function in main.py to get access
 
-INSIDE main.py
+### INSIDE main.py:
 - Modify subreddit_names on line 240 to change the subreddits you want to pull data from
 - modify number_of_posts_per_subreddit to change the amount of posts from each subreddit
 - Run main.js and you generated videos should appear in videos' subfolder's with today's date
